@@ -11,4 +11,4 @@ def get_article(request, article_id):
         raise Http404
 
 def archive(request):
-    return render(request, 'templates/archive.html', {"posts": Article.objects.all()})
+    return render(request, 'archive.html', {"posts": Article.objects.all()})

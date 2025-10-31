@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Привет, Мир!</title>
-        <link rel="stylesheet" href="{{ STATIC_URL }}/static/index.css">
+        <link rel="stylesheet" href="{% static 'index.css' %}">
     </head>
     <body>
         <h1>Привет, Мир!</h1>
-        <img src="./static/mtuci_logo.svg"/>
+        <img src="{% static 'mtuci_logo.svg' %}"/>
         <h2>Это учебный сайт, с его помощью будут изучены технологии
             python/django, html/css.</h2>
         <h3>Как видите, здесь используются заголовки различных
@@ -30,7 +31,7 @@
         </ol>
 		</h4>
         <p>И даже таблица:</p>
-        <table style="border: none">
+        <table>
             <thead>
                 <tr>
                     <th>Столбик 1</th>

@@ -5,13 +5,14 @@ body {
 }
 table {
     border-collapse: collapse;
+    width: 100%;
 }
 p, h4 {
     font-size: 20px;
     margin-bottom: 0;
 }
 h4 {
-    font-size: 14px;
+    font-size: 24px;
 }
 ul, ol {
     margin: 0;
@@ -20,11 +21,6 @@ table tr td {
     padding: 5px;
     border: 1px solid black;
 }
-table {
-	width: 100%;
-    border-collapse: collapse;
-}
-
 img {
 	height: 30px;
 	width: auto;
