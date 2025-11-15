@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Django Public Blog - создать статью</title>
+        <link rel="stylesheet" href="{% static 'css/article.css' %}">
+    </head>
+    <body>
+        <div class="header">
+        <img src="{% static 'mtuci_logo.svg' %}" class="logo">
+        <nav>
+            <a href="{% url 'archive' %}" style="font-weight: bold; color: white">Все статьи</a>
+        </nav>
+    </div>
+        <div class="content">
+            <h1>Написать статью</h1>
+            <form method="POST">{% csrf_token %}
+                <input class="article_input" type="text" name="title" placeholder="Название статьи" value="{{ form.title }}">
+                    <textarea name="text" placeholder="Текст статьи">{{ form.text }}</textarea>
+                <input class="button" type="submit" value="Сохранить">
+            </form>
+        {{ form.errors }}
+        </div>
+    </body>
+</html>
