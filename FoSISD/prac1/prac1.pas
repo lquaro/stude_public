@@ -8,7 +8,6 @@ begin
   else
   begin
     x := 0.0;
-
     step := 1.0;
     while (x + step) * (x + step) <= n do
       x := x + step;
