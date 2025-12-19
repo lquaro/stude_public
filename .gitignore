@@ -13,7 +13,6 @@
 **/migrations/
 **/__pycache__/
 *.py[cod]
-**/__init__.py
 
 **/media/
 **/debug.log
@@ -27,4 +26,6 @@
 **/db.sqlite3
 
 **/out/
+**/target/
 *iml
+**/pom.xml
